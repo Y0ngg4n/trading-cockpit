@@ -1,9 +1,41 @@
 {
+  "home.register.accountAlreadyExists": {
+    "origin": [
+      [
+        "src/components/Home/Register.tsx",
+        79
+      ]
+    ]
+  },
+  "home.register.passwordNotMatch": {
+    "origin": [
+      [
+        "src/components/Home/Register.tsx",
+        82
+      ]
+    ]
+  },
+  "home.register.passwordNotSafe": {
+    "origin": [
+      [
+        "src/components/Home/Register.tsx",
+        85
+      ]
+    ]
+  },
   "home.login.email": {
     "origin": [
       [
         "src/components/Home/Register.tsx",
-        8
+        91
+      ]
+    ]
+  },
+  "home.register.provide.email": {
+    "origin": [
+      [
+        "src/components/Home/Register.tsx",
+        94
       ]
     ]
   },
@@ -11,23 +43,31 @@
     "origin": [
       [
         "src/components/Home/Register.tsx",
-        12
+        98
+      ],
+      [
+        "src/components/Home/Register.tsx",
+        105
       ]
     ]
   },
-  "home.register.passwordRepeat": {
+  "home.register.provide.password": {
     "origin": [
       [
         "src/components/Home/Register.tsx",
-        16
+        101
+      ],
+      [
+        "src/components/Home/Register.tsx",
+        108
       ]
     ]
   },
-  "home.register.submit": {
+  "home.login.submit": {
     "origin": [
       [
         "src/components/Home/Register.tsx",
-        20
+        113
       ]
     ]
   }

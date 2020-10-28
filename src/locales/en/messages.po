@@ -14,8 +14,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 
-#: src/components/Home/Login.tsx:46
-#: src/components/Home/Register.tsx:8
+#: src/components/Home/Login.tsx:65 src/components/Home/Register.tsx:91
 msgid "home.login.email"
 msgstr "Email Address"
 
@@ -23,27 +22,53 @@ msgstr "Email Address"
 msgid "home.login.noAccount"
 msgstr "No account"
 
-#: src/components/Home/Login.tsx:53
-#: src/components/Home/Register.tsx:12
+#: src/components/Home/Login.tsx:72 src/components/Home/Register.tsx:98
+#: src/components/Home/Register.tsx:105
 msgid "home.login.password"
 msgstr "Password"
 
-#: src/components/Home/Login.tsx:63
+#: src/components/Home/Login.tsx:68
+msgid "home.login.provide.email"
+msgstr "Please provide email"
+
+#: src/components/Home/Login.tsx:75
+msgid "home.login.provide.password"
+msgstr "Please provide password"
+
+#: src/components/Home/Login.tsx:80 src/components/Home/Register.tsx:113
 msgid "home.login.submit"
 msgstr "Login"
 
-#: src/components/Home/Login.tsx:60
+#: src/components/Home/Login.tsx:59
 msgid "home.login.wrongCredentials"
 msgstr "Email or Password is wrong"
+
+#: src/components/Home/Register.tsx:79
+msgid "home.register.accountAlreadyExists"
+msgstr "Account already Exists"
 
 #: src/components/Home.tsx:22
 msgid "home.register.haveAccount"
 msgstr "Allready having account"
 
-#: src/components/Home/Register.tsx:16
-msgid "home.register.passwordRepeat"
-msgstr "Repeat Password"
+#: src/components/Home/Register.tsx:82
+msgid "home.register.passwordNotMatch"
+msgstr "Passwords do not match"
 
-#: src/components/Home/Register.tsx:20
-msgid "home.register.submit"
-msgstr "Registrieren"
+#: src/components/Home/Register.tsx:85
+msgid "home.register.passwordNotSafe"
+msgstr "Password is not safe"
+
+#: src/components/Home/Register.tsx:94
+msgid "home.register.provide.email"
+msgstr "Please provide email"
+
+#: src/components/Home/Register.tsx:101 src/components/Home/Register.tsx:108
+msgid "home.register.provide.password"
+msgstr "Please provide password"
+
+#~ msgid "home.register.passwordRepeat"
+#~ msgstr "Repeat Password"
+
+#~ msgid "home.register.submit"
+#~ msgstr "Registrieren"

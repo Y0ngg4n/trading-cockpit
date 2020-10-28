@@ -6,6 +6,7 @@ import {Home} from "./components/Home";
 
 import catalogDe from './locales/de/messages.js'
 import catalogEn from './locales/en/messages.js'
+import {Dashboard} from "./components/Dashboard/Dashboard";
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
         <I18nProvider language={lang} catalogs={catalogs}>
             <Switch>
                 <Route path="/" component={Home} exact/>
+                <Route path="/dashboard" component={Dashboard} exact/>
             </Switch>
         </I18nProvider>
     );

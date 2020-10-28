@@ -3,13 +3,18 @@ import {Form, Button, Alert} from "react-bootstrap";
 import {Trans} from '@lingui/macro';
 import {CONFIG} from '../../config';
 import axios from 'axios';
+import  { Redirect } from 'react-router-dom'
 
+interface  Props {
+
+}
 
 interface StateProps {
     validated: boolean,
     error: boolean,
-    email: string
-    password: string
+    email: string,
+    password: string,
+    localSessionKey: string
 }
 
 export class Login extends Component<{}, StateProps> {
@@ -18,14 +23,14 @@ export class Login extends Component<{}, StateProps> {
         validated: false,
         error: false,
         email: "",
-        password: ""
+        password: "",
+        localSessionKey: "tc-session"
     }
 
     async login(event: FormEvent<HTMLFormElement>) {
         const form = event.currentTarget;
         event.preventDefault();
-        if (form.checkValidity() === false) {
-            event.preventDefault();
+        if (!form.checkValidity()) {
             event.stopPropagation();
         }
         try {
@@ -34,7 +39,7 @@ export class Login extends Component<{}, StateProps> {
                 password: this.state.password
             });
             if (response.status === 200) {
-                console.log("Weiiiiter")
+                localStorage.setItem(this.state.localSessionKey, response.data.token)
                 this.setState((prevState) => ({
                         ...prevState,
                         validated: true,
@@ -68,13 +73,17 @@ export class Login extends Component<{}, StateProps> {
     }
 
     render() {
+        if(localStorage.getItem(this.state.localSessionKey)){
+            return (<Redirect to="/dashboard"/>)
+        }
+
         let errorAlert = <Form.Group/>
         if (this.state.error) {
             errorAlert = <Form.Group><Alert variant="danger"><Trans
                 id="home.login.wrongCredentials"/></Alert></Form.Group>
         }
         return (
-            <Form noValidate validated={this.state.validated} onSubmit={async (e) => {
+            <Form validated={this.state.validated} onSubmit={async (e) => {
                 await this.login(e)
             }}>
                 <Form.Group controlId="emailAddress">
@@ -83,7 +92,7 @@ export class Login extends Component<{}, StateProps> {
                                   onChange={(e) => this.handleEmailChange(e)}
                                   type="email" required/>
                     <Form.Control.Feedback type="invalid">
-                        Please provide an email adress
+                        <Trans id="home.login.provide.email"/>
                     </Form.Control.Feedback>
                 </Form.Group>
                 <Form.Group controlId="password">
@@ -92,7 +101,7 @@ export class Login extends Component<{}, StateProps> {
                                   onChange={(e) => this.handlePasswordChange(e)}
                                   type="password" required/>
                     <Form.Control.Feedback type="invalid">
-                        Please provide a password
+                        <Trans id="home.login.provide.password"/>
                     </Form.Control.Feedback>
                 </Form.Group>
                 {errorAlert}

@@ -1,9 +1,25 @@
 {
+  "home.login.wrongCredentials": {
+    "origin": [
+      [
+        "src/components/Home/Login.tsx",
+        59
+      ]
+    ]
+  },
   "home.login.email": {
     "origin": [
       [
         "src/components/Home/Login.tsx",
-        46
+        65
+      ]
+    ]
+  },
+  "home.login.provide.email": {
+    "origin": [
+      [
+        "src/components/Home/Login.tsx",
+        68
       ]
     ]
   },
@@ -11,15 +27,15 @@
     "origin": [
       [
         "src/components/Home/Login.tsx",
-        53
+        72
       ]
     ]
   },
-  "home.login.wrongCredentials": {
+  "home.login.provide.password": {
     "origin": [
       [
         "src/components/Home/Login.tsx",
-        60
+        75
       ]
     ]
   },
@@ -27,7 +43,7 @@
     "origin": [
       [
         "src/components/Home/Login.tsx",
-        63
+        80
       ]
     ]
   }
