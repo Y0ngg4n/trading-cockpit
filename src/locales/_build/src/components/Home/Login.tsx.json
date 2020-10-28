@@ -1,0 +1,34 @@
+{
+  "home.login.email": {
+    "origin": [
+      [
+        "src/components/Home/Login.tsx",
+        46
+      ]
+    ]
+  },
+  "home.login.password": {
+    "origin": [
+      [
+        "src/components/Home/Login.tsx",
+        53
+      ]
+    ]
+  },
+  "home.login.wrongCredentials": {
+    "origin": [
+      [
+        "src/components/Home/Login.tsx",
+        60
+      ]
+    ]
+  },
+  "home.login.submit": {
+    "origin": [
+      [
+        "src/components/Home/Login.tsx",
+        63
+      ]
+    ]
+  }
+}

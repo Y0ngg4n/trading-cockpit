@@ -1,0 +1,34 @@
+{
+  "home.login.email": {
+    "origin": [
+      [
+        "src/components/Home/Register.tsx",
+        8
+      ]
+    ]
+  },
+  "home.login.password": {
+    "origin": [
+      [
+        "src/components/Home/Register.tsx",
+        12
+      ]
+    ]
+  },
+  "home.register.passwordRepeat": {
+    "origin": [
+      [
+        "src/components/Home/Register.tsx",
+        16
+      ]
+    ]
+  },
+  "home.register.submit": {
+    "origin": [
+      [
+        "src/components/Home/Register.tsx",
+        20
+      ]
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "home.login.noAccount": {
+    "origin": [
+      [
+        "src/components/Home.tsx",
+        18
+      ]
+    ]
+  },
+  "home.register.haveAccount": {
+    "origin": [
+      [
+        "src/components/Home.tsx",
+        22
+      ]
+    ]
+  }
+}

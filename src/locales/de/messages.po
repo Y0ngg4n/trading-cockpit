@@ -1,0 +1,49 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2020-10-27 11:54+0100\n"
+"Mime-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.1\n"
+"Language: de\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+"MIME-Version: 1.0\n"
+
+#: src/components/Home/Login.tsx:46
+#: src/components/Home/Register.tsx:8
+msgid "home.login.email"
+msgstr "Email Adresse"
+
+#: src/components/Home.tsx:18
+msgid "home.login.noAccount"
+msgstr "Kein Account"
+
+#: src/components/Home/Login.tsx:53
+#: src/components/Home/Register.tsx:12
+msgid "home.login.password"
+msgstr "Passwort"
+
+#: src/components/Home/Login.tsx:63
+msgid "home.login.submit"
+msgstr "Einloggen"
+
+#: src/components/Home/Login.tsx:60
+msgid "home.login.wrongCredentials"
+msgstr "Email oder Passwort ist falsch"
+
+#: src/components/Home.tsx:22
+msgid "home.register.haveAccount"
+msgstr "Bereits Account vorhanden"
+
+#: src/components/Home/Register.tsx:16
+msgid "home.register.passwordRepeat"
+msgstr "Password wiederholen"
+
+#: src/components/Home/Register.tsx:20
+msgid "home.register.submit"
+msgstr "Registrieren"
