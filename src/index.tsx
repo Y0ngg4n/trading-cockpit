@@ -9,6 +9,10 @@ import {BrowserRouter} from 'react-router-dom';
 // Importing the Bootstrap CSS
 import 'bootswatch/dist/darkly/bootstrap.min.css';
 
+// import React-grid-layout css
+import 'react-grid-layout/css/styles.css'
+import 'react-resizable/css/styles.css'
+
 
 ReactDOM.render(
     <React.StrictMode>

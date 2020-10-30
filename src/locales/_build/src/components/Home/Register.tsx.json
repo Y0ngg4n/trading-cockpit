@@ -3,7 +3,7 @@
     "origin": [
       [
         "src/components/Home/Register.tsx",
-        79
+        84
       ]
     ]
   },
@@ -11,7 +11,7 @@
     "origin": [
       [
         "src/components/Home/Register.tsx",
-        82
+        87
       ]
     ]
   },
@@ -19,7 +19,7 @@
     "origin": [
       [
         "src/components/Home/Register.tsx",
-        85
+        90
       ]
     ]
   },
@@ -27,7 +27,7 @@
     "origin": [
       [
         "src/components/Home/Register.tsx",
-        91
+        96
       ]
     ]
   },
@@ -35,7 +35,7 @@
     "origin": [
       [
         "src/components/Home/Register.tsx",
-        94
+        99
       ]
     ]
   },
@@ -43,11 +43,11 @@
     "origin": [
       [
         "src/components/Home/Register.tsx",
-        98
+        103
       ],
       [
         "src/components/Home/Register.tsx",
-        105
+        110
       ]
     ]
   },
@@ -55,19 +55,19 @@
     "origin": [
       [
         "src/components/Home/Register.tsx",
-        101
+        106
       ],
       [
         "src/components/Home/Register.tsx",
-        108
+        113
       ]
     ]
   },
-  "home.login.submit": {
+  "home.register.submit": {
     "origin": [
       [
         "src/components/Home/Register.tsx",
-        113
+        118
       ]
     ]
   }

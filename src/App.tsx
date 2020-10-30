@@ -7,6 +7,7 @@ import {Home} from "./components/Home";
 import catalogDe from './locales/de/messages.js'
 import catalogEn from './locales/en/messages.js'
 import {Dashboard} from "./components/Dashboard/Dashboard";
+import {ApiKeyForm} from "./components/Dashboard/ApiKeyForm";
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
             <Switch>
                 <Route path="/" component={Home} exact/>
                 <Route path="/dashboard" component={Dashboard} exact/>
+                <Route path="/api-key-form" component={ApiKeyForm} exact/>
             </Switch>
         </I18nProvider>
     );

@@ -3,18 +3,14 @@ import {Form, Button, Alert} from "react-bootstrap";
 import {Trans} from '@lingui/macro';
 import {CONFIG} from '../../config';
 import axios from 'axios';
-import  { Redirect } from 'react-router-dom'
-
-interface  Props {
-
-}
+import {Redirect} from "react-router-dom";
 
 interface StateProps {
     validated: boolean,
     error: boolean,
     email: string,
     password: string,
-    localSessionKey: string
+    loggedIn: boolean
 }
 
 export class Login extends Component<{}, StateProps> {
@@ -24,7 +20,7 @@ export class Login extends Component<{}, StateProps> {
         error: false,
         email: "",
         password: "",
-        localSessionKey: "tc-session"
+        loggedIn: false
     }
 
     async login(event: FormEvent<HTMLFormElement>) {
@@ -38,12 +34,14 @@ export class Login extends Component<{}, StateProps> {
                 email: this.state.email,
                 password: this.state.password
             });
+            console.log(response.data.token)
             if (response.status === 200) {
-                localStorage.setItem(this.state.localSessionKey, response.data.token)
+                localStorage.setItem(CONFIG.localSessionKey, response.data.token)
                 this.setState((prevState) => ({
                         ...prevState,
                         validated: true,
-                        error: false
+                        error: false,
+                        loggedIn: true
                     }
                 ));
             } else {
@@ -73,10 +71,9 @@ export class Login extends Component<{}, StateProps> {
     }
 
     render() {
-        if(localStorage.getItem(this.state.localSessionKey)){
+        if(this.state.loggedIn){
             return (<Redirect to="/dashboard"/>)
         }
-
         let errorAlert = <Form.Group/>
         if (this.state.error) {
             errorAlert = <Form.Group><Alert variant="danger"><Trans
@@ -88,18 +85,22 @@ export class Login extends Component<{}, StateProps> {
             }}>
                 <Form.Group controlId="emailAddress">
                     <Form.Label><Trans id="home.login.email"/></Form.Label>
-                    <Form.Control value={this.state.email}
-                                  onChange={(e) => this.handleEmailChange(e)}
-                                  type="email" required/>
+                    <Form.Control
+                        autoComplete="username"
+                        value={this.state.email}
+                        onChange={(e) => this.handleEmailChange(e)}
+                        type="email" required/>
                     <Form.Control.Feedback type="invalid">
                         <Trans id="home.login.provide.email"/>
                     </Form.Control.Feedback>
                 </Form.Group>
                 <Form.Group controlId="password">
                     <Form.Label><Trans id="home.login.password"/></Form.Label>
-                    <Form.Control value={this.state.password}
-                                  onChange={(e) => this.handlePasswordChange(e)}
-                                  type="password" required/>
+                    <Form.Control
+                        autoComplete="current-password"
+                        value={this.state.password}
+                        onChange={(e) => this.handlePasswordChange(e)}
+                        type="password" required/>
                     <Form.Control.Feedback type="invalid">
                         <Trans id="home.login.provide.password"/>
                     </Form.Control.Feedback>

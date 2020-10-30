@@ -14,61 +14,88 @@ msgstr ""
 "Plural-Forms: \n"
 "MIME-Version: 1.0\n"
 
-#: src/components/Home/Login.tsx:65 src/components/Home/Register.tsx:91
+#: src/components/Dashboard/ApiKeyForm.tsx:30
+msgid "dashboard.apikey.description"
+msgstr ""
+"Bitte folgen sie dem untenstehenden Link und füllen sie das Formular bei Alphavantage ein um Zugriff auf Echtzeitdaten zu erhalten.\n"
+"Fügen sie den API Key dann hier ein."
+
+#: src/components/Dashboard/ApiKeyForm.tsx:35
+msgid "dashboard.apikey.label"
+msgstr "API Key"
+
+#: src/components/Dashboard/ApiKeyForm.tsx:40
+msgid "dashboard.apikey.save"
+msgstr "Speichern"
+
+#: src/components/Dashboard/ApiKeyForm.tsx:29
+msgid "dashboard.apikey.title"
+msgstr "Echtzeitdaten API Key"
+
+#: src/components/Dashboard/ApiKeyForm.tsx:38
+msgid "dashboard.apikey.wrongApiKey"
+msgstr "API Key ist falsch"
+
+#: src/components/Dashboard/DashboardComponents/Depots.tsx:13
+msgid "dashboard.depots.login"
+msgstr "Einloggen"
+
+#: src/components/Home/Login.tsx:71 src/components/Home/Register.tsx:96
 msgid "home.login.email"
 msgstr "Email Adresse"
 
-#: src/components/Home.tsx:18
+#: src/components/Home.tsx:48
 msgid "home.login.noAccount"
 msgstr "Kein Account"
 
-#: src/components/Home/Login.tsx:72 src/components/Home/Register.tsx:98
-#: src/components/Home/Register.tsx:105
+#: src/components/Home/Login.tsx:78 src/components/Home/Register.tsx:103
+#: src/components/Home/Register.tsx:110
 msgid "home.login.password"
 msgstr "Passwort"
 
-#: src/components/Home/Login.tsx:68
+#: src/components/Home/Login.tsx:74
 msgid "home.login.provide.email"
 msgstr "Bitte Email eingeben"
 
-#: src/components/Home/Login.tsx:75
+#: src/components/Home/Login.tsx:81
 msgid "home.login.provide.password"
 msgstr "Bitte Passwort eingeben"
 
-#: src/components/Home/Login.tsx:80 src/components/Home/Register.tsx:113
+#: src/components/Home/Login.tsx:86
 msgid "home.login.submit"
 msgstr "Einloggen"
 
-#: src/components/Home/Login.tsx:59
+#: src/components/Home/Login.tsx:65
 msgid "home.login.wrongCredentials"
 msgstr "Email oder Passwort ist falsch"
 
-#: src/components/Home/Register.tsx:79
+#: src/components/Home/Register.tsx:84
 msgid "home.register.accountAlreadyExists"
 msgstr "Account existiert bereits"
 
-#: src/components/Home.tsx:22
+#: src/components/Home.tsx:52
 msgid "home.register.haveAccount"
 msgstr "Bereits Account vorhanden"
 
-#: src/components/Home/Register.tsx:82
+#: src/components/Home/Register.tsx:87
 msgid "home.register.passwordNotMatch"
 msgstr "Passwörter stimmen nicht überein"
 
-#: src/components/Home/Register.tsx:85
+#: src/components/Home/Register.tsx:90
 msgid "home.register.passwordNotSafe"
 msgstr "Passwort ist nicht sicher"
 
-#: src/components/Home/Register.tsx:94
+#: src/components/Home/Register.tsx:99
 msgid "home.register.provide.email"
 msgstr "Bitte Email eingeben"
 
-#: src/components/Home/Register.tsx:101 src/components/Home/Register.tsx:108
+#: src/components/Home/Register.tsx:106 src/components/Home/Register.tsx:113
 msgid "home.register.provide.password"
 msgstr "Bitte Passwort eingeben"
 
+#: src/components/Home/Register.tsx:118
+msgid "home.register.submit"
+msgstr "Registrieren"
+
 #~ msgid "home.register.passwordRepeat"
 #~ msgstr "Password wiederholen"
-
-#~ msgid "home.register.submit"
-#~ msgstr "Registrieren"

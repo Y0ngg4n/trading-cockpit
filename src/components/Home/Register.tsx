@@ -3,6 +3,7 @@ import {Form, Button, Alert} from "react-bootstrap";
 import {Trans} from '@lingui/macro';
 import {CONFIG} from '../../config';
 import axios from 'axios';
+import {Redirect} from "react-router-dom";
 
 
 interface StateProps {
@@ -12,6 +13,7 @@ interface StateProps {
     password: string
     passwordRepeat: string
     passwordNotMatch: boolean
+    registered: boolean
 }
 
 export class Register extends Component<{}, StateProps> {
@@ -23,10 +25,11 @@ export class Register extends Component<{}, StateProps> {
         password: "",
         passwordRepeat: "",
         passwordNotMatch: false,
-        passwordNotSafe: false
+        passwordNotSafe: false,
+        registered: false
     }
 
-    async login(event: FormEvent<HTMLFormElement>) {
+    async register(event: FormEvent<HTMLFormElement>) {
         const form = event.currentTarget;
         event.preventDefault();
 
@@ -65,11 +68,12 @@ export class Register extends Component<{}, StateProps> {
                 password: this.state.password
             });
             if (response.status === 201) {
-                localStorage.setItem("tc-session", response.data.token)
+                localStorage.setItem(CONFIG.localSessionKey, response.data.token)
                 this.setState((prevState) => ({
                         ...prevState,
                         validated: true,
-                        error: false
+                        error: false,
+                        registered: true
                     }
                 ));
             } else {
@@ -107,6 +111,9 @@ export class Register extends Component<{}, StateProps> {
 
 
     render() {
+        if(this.state.registered){
+            return (<Redirect to="/dashboard"/>)
+        }
         let errorAlert = <Form.Group/>
         if (this.state.error) {
             errorAlert = <Form.Group><Alert variant="danger"><Trans
@@ -122,7 +129,7 @@ export class Register extends Component<{}, StateProps> {
         }
         return (
             <Form validated={this.state.validated} onSubmit={async (e) => {
-                await this.login(e)
+                await this.register(e)
             }}>
                 <Form.Group controlId="emailAddress">
                     <Form.Label><Trans id="home.login.email"/></Form.Label>
