@@ -5,6 +5,7 @@ import GridLayout from 'react-grid-layout';
 import {CONFIG} from "../../config";
 import axios from "axios";
 import {ApiKeyForm} from "./ApiKeyForm";
+import {MarketOverview} from "./DashboardComponents/MarketOverview";
 import {Redirect} from "react-router-dom";
 
 interface StateProps {
@@ -26,6 +27,7 @@ export class Dashboard extends Component<{}, StateProps> {
         const response = await axios.get(CONFIG.apiURL + CONFIG.meUrl, {
             headers: {Authorization: 'Bearer ' + token}
         });
+        localStorage.setItem(CONFIG.localAPIKey, response.data.apikey)
         if (response.status === 200) {
             this.setState((prevState) => ({
                     ...prevState,
@@ -37,6 +39,7 @@ export class Dashboard extends Component<{}, StateProps> {
 
     layout = [
         {i: 'depots', x: 0, y: 0, w: 6, h: 4, minW: 2, maxW: 6},
+        {i: 'marketoverview', x: 1, y: 0, w: 6, h: 4, minW: 2, maxW: 6},
     ];
 
     render() {
@@ -48,6 +51,7 @@ export class Dashboard extends Component<{}, StateProps> {
                 <Navigation/>
                 <GridLayout className="layout" layout={this.layout}>
                     <Depots key="depots"/>
+                    <MarketOverview key="marketoverview"/>
                 </GridLayout>
             </div>
         )

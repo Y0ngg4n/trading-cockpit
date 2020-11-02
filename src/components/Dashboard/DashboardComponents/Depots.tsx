@@ -11,7 +11,7 @@ export class Depots extends Component<{}, StateProps> {
     render() {
         return (
             <Card>
-                <Card.Header>Depots</Card.Header>
+                <Card.Header><Trans id="dashboard.depots.header.title"/></Card.Header>
                 <Card.Body>
                     <ListGroup variant="flush">
                         <ListGroup.Item>

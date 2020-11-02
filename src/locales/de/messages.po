@@ -17,8 +17,8 @@ msgstr ""
 #: src/components/Dashboard/ApiKeyForm.tsx:30
 msgid "dashboard.apikey.description"
 msgstr ""
-"Bitte folgen sie dem untenstehenden Link und füllen sie das Formular bei Alphavantage ein um Zugriff auf Echtzeitdaten zu erhalten.\n"
-"Fügen sie den API Key dann hier ein."
+"Bitte folgen sie dem untenstehenden Link und legen sie sich einen Account bei Lemon Markets an um Zugriff auf Echtzeitdaten zu erhalten.\n"
+"Folgen sie dann dem untenstehenden Link um einen API Key zu erstellen und fügen sie den API Key dann hier ein."
 
 #: src/components/Dashboard/ApiKeyForm.tsx:35
 msgid "dashboard.apikey.label"
