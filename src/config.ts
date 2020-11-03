@@ -17,6 +17,7 @@ export interface LemonMarkets {
     getApiKeyUrl: string
     websocketUrl: string
     searchUrl: string
+    lastTickUrl: string
 }
 
 export const CONFIG: ApplicationConfig = {
@@ -39,5 +40,6 @@ export const ALPHAVANTAGE: AlphaVantage = {
 export const LEMONMARKETS: LemonMarkets = {
     getApiKeyUrl: "https://app.lemon.markets/auth",
     websocketUrl: "wss://api.lemon.markets/streams/v1/marketdata",
-    searchUrl: "https://api.lemon.markets/rest/v1/data/instruments/"
+    searchUrl: "https://api.lemon.markets/rest/v1/data/instruments/",
+    lastTickUrl: "/ticks/latest/"
 }

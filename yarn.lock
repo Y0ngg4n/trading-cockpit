@@ -1831,6 +1831,13 @@
   resolved "https://registry.yarnpkg.com/@types/q/-/q-1.5.4.tgz#15925414e0ad2cd765bfef58842f7e26a7accb24"
   integrity sha512-1HcDas8SEj4z1Wc696tH56G8OlRaH/sqZOynNNB+HF0WOeXPaxTtbYzJY2oEfiUxjSKjhCKr+MvR7dCHcEelug==
 
+"@types/react-autosuggest@^10.0.1":
+  version "10.0.1"
+  resolved "https://registry.yarnpkg.com/@types/react-autosuggest/-/react-autosuggest-10.0.1.tgz#6d7cdf2a2741742ef48bef26d918af08be521d90"
+  integrity sha512-CrgPh7phWH/i3ediedml4b1w9d8F0uefzAooh69OXqRU84h1UiJdBR6EoUff+PPPiBeCvh4wI7fgQtVqOe5q4g==
+  dependencies:
+    "@types/react" "*"
+
 "@types/react-dom@^16.9.8":
   version "16.9.8"
   resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-16.9.8.tgz#fe4c1e11dfc67155733dfa6aa65108b4971cb423"
@@ -1938,6 +1945,13 @@
     "@types/uglify-js" "*"
     "@types/webpack-sources" "*"
     source-map "^0.6.0"
+
+"@types/ws@^7.2.7":
+  version "7.2.9"
+  resolved "https://registry.yarnpkg.com/@types/ws/-/ws-7.2.9.tgz#cadfac473acfab192678a487c3ecbb13a503547f"
+  integrity sha512-gmXYAXr7G4BrRMnkGQGkGonc3ArVro9VZd//C1uns/qqsJyl2dxaJdlPMhZbcq5MTxFFC+ttFWtHSfVW5+hlRA==
+  dependencies:
+    "@types/node" "*"
 
 "@types/yargs-parser@*":
   version "15.0.0"
@@ -5381,6 +5395,11 @@ forwarded@~0.1.2:
   resolved "https://registry.yarnpkg.com/forwarded/-/forwarded-0.1.2.tgz#98c23dab1175657b8c0573e8ceccd91b0ff18c84"
   integrity sha1-mMI9qxF1ZXuMBXPozszZGw/xjIQ=
 
+fp-ts@^2.8.4:
+  version "2.8.5"
+  resolved "https://registry.yarnpkg.com/fp-ts/-/fp-ts-2.8.5.tgz#1b4247081ea066cc152b48a55a0bc13c30828701"
+  integrity sha512-g6do+Q/IQsxgsd2qU6+QnAbZaPR533seIbFyLGqWSxhNX4+F+cY37QdaYmMUOzekLOv/yg/2f15tc26tzDatgw==
+
 fragment-cache@^0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/fragment-cache/-/fragment-cache-0.2.1.tgz#4290fad27f13e89be7f33799c6bc5a0abfff0d19"
@@ -6137,6 +6156,11 @@ invariant@^2.2.4:
   integrity sha512-phJfQVBuaJM5raOpJjSfkiD6BpbCE4Ns//LaXl6wGYtUBY83nWS6Rf9tXm2e8VaK60JEjYldbPif/A2B1C2gNA==
   dependencies:
     loose-envify "^1.0.0"
+
+io-ts@^2.2.11:
+  version "2.2.12"
+  resolved "https://registry.yarnpkg.com/io-ts/-/io-ts-2.2.12.tgz#b840f2da4c2a6c8a4d8ab48122914672bfb22bab"
+  integrity sha512-pZh43E3xs1RUmv3voC58Mbb6Ihjo3UdDU6WWi578Zpe2BxVue1SlSQCioSymZxk9HoXa370nSfFzp5LrLA2F8g==
 
 ip-regex@^2.1.0:
   version "2.1.0"
@@ -7260,6 +7284,17 @@ lazy-cache@^1.0.3:
   resolved "https://registry.yarnpkg.com/lazy-cache/-/lazy-cache-1.0.4.tgz#a1d78fc3a50474cb80845d3b3b6e1da49a446e8e"
   integrity sha1-odePw6UEdMuAhF07O24dpJpEbo4=
 
+lemon-markets@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/lemon-markets/-/lemon-markets-1.1.0.tgz#1f00ab2b264352f06214d6d182926834158f8ff3"
+  integrity sha512-I2YVMrmsapUBO6/cb3wpFpCIsldj762haaVYV33aP84l3Rz58aZVzgK5vuZNppVK2fru1kNE1V8sqS2CuCzJuQ==
+  dependencies:
+    "@types/ws" "^7.2.7"
+    fp-ts "^2.8.4"
+    io-ts "^2.2.11"
+    node-fetch "^2.6.1"
+    ws "^7.3.1"
+
 leven@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/leven/-/leven-3.1.0.tgz#77891de834064cccba82ae7842bb6b14a13ed7f2"
@@ -7905,6 +7940,11 @@ no-case@^3.0.3:
   dependencies:
     lower-case "^2.0.1"
     tslib "^1.10.0"
+
+node-fetch@^2.6.1:
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.1.tgz#045bd323631f76ed2e2b55573394416b639a0052"
+  integrity sha512-V4aYg89jEoVRxRb2fJdAg8FHvI7cEyYdVAh94HH0UIK8oJxUfkjlDQN9RbMx+bEjP7+ggMiFRprSti032Oipxw==
 
 node-forge@^0.10.0:
   version "0.10.0"
@@ -12236,7 +12276,7 @@ ws@^6.2.1:
   dependencies:
     async-limiter "~1.0.0"
 
-ws@^7.2.3:
+ws@^7.2.3, ws@^7.3.1:
   version "7.3.1"
   resolved "https://registry.yarnpkg.com/ws/-/ws-7.3.1.tgz#d0547bf67f7ce4f12a72dfe31262c68d7dc551c8"
   integrity sha512-D3RuNkynyHmEJIpD2qrgVkc9DQ23OrN/moAwZX4L8DfvszsJxpjQuUq3LMx6HoYji9fbIOBY18XWBsAux1ZZUA==
