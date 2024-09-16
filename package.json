@@ -17,7 +17,7 @@
     "@types/react-dom": "^16.9.8",
     "add": "^2.0.6",
     "axios": "^1.6.0",
-    "bootstrap": "^4.5.3",
+    "bootstrap": "^5.0.0",
     "bootswatch": "^4.5.3",
     "jquery": "3.5.0",
     "lemon-markets": "^1.1.0",
