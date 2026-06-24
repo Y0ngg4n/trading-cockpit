@@ -64,7 +64,7 @@
     ]
   },
   "devDependencies": {
-    "@babel/core": "^7.12.3",
+    "@babel/core": "^7.29.6",
     "@lingui/cli": "^2.9.2",
     "@lingui/macro": "^2.9.2",
     "@types/react-autosuggest": "^10.0.1",
